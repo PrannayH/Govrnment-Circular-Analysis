@@ -92,6 +92,6 @@ class POCR:
             return page_text
 
 # Example usage:
-# pdf_path = '/home/praadnyah/p8/annotations/C2.pdf'
+# pdf_path = 'temp.pdf'
 # pdf_processor = POCR(pdf_path)
 # pdf_processor.perform_ocr()
