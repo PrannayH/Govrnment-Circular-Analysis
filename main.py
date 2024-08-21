@@ -5,13 +5,13 @@ from embed import Embed
 from vector_db import VectorDB
 
 if __name__ == "__main__":
-    pdf_path = '/home/praadnyah/p8/annotations/A1.pdf'  # Replace with your PDF file path
+    pdf_path = 'temp.pdf'  # Replace with your PDF file path
     model_path = "output_model55"  # Path to your custom-trained SpaCy NER model
 
     # Aura instance credentials
     aura_uri = "neo4j+s://3e84cc7b.databases.neo4j.io"
-    aura_username = "neo4j"
-    aura_password = "c2ltTfaFRmNLrRmSogMkahXB96I9VMgKzfXkQ1lV8cw"
+    aura_username = ""
+    aura_password = ""
 
     # Perform OCR
     pdf_processor = POCR(pdf_path)
