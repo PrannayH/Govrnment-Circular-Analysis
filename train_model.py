@@ -41,7 +41,7 @@ for _, annotations in train_data:
 optimizer = nlp.begin_training()
 
 # Hyperparameters
-n_iter = 125
+n_iter = 55
 dropout_rate = 0.05
 learn_rate = compounding(1e-4, 1e-2, 1.001)
 batch_sizes = compounding(4.0, 32.0, 1.001)
@@ -59,6 +59,6 @@ for itn in range(n_iter):
     print(f"Losses at iteration {itn}: {losses}")
 
 # Save the trained model
-output_dir = "output_model125"
+output_dir = "output_model55"
 nlp.to_disk(output_dir)
 print(f"Saved model to {output_dir}")
